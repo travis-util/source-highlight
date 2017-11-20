@@ -6,6 +6,6 @@ addons:
 before_install:
 - apt-cache policy source-highlight
 - source-highlight --lang-list
-- source-highlight --out-format=esc -o STDOUT -i .travis.yml
+# - source-highlight --out-format=esc -o STDOUT -i .travis.yml # source-highlight: could not find a language definition for input file .travis.yml
 
 script: true
