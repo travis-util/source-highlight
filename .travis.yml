@@ -3,4 +3,9 @@ addons:
   apt:
     packages:
     - source-highlight
+before_install:
+- apt-cache policy source-highlight
+- source-highlight --lang-list
+- source-highlight --out-format=esc -o STDOUT -i .travis.yml
+
 script: true
